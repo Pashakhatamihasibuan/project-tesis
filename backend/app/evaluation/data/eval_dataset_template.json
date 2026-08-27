@@ -1,0 +1,52 @@
+[
+  {
+    "id": "faktual_001",
+    "question": "Berapa minimal SKS yang harus ditempuh mahasiswa program Magister untuk lulus?",
+    "ground_truth": "Mahasiswa program Magister wajib menempuh sekurang-kurangnya 36 SKS untuk dapat dinyatakan lulus, termasuk tesis.",
+    "question_type": "faktual",
+    "source_document": "contoh_peraturan_akademik.pdf",
+    "source_page": 1,
+    "validated_by": null,
+    "_catatan": "CONTOH FORMAT SAJA. validated_by masih null karena ini bukan soal asli hasil validasi pakar -- ganti dengan data sesungguhnya."
+  },
+  {
+    "id": "prosedural_001",
+    "question": "Bagaimana prosedur pengajuan ujian tesis?",
+    "ground_truth": "Mahasiswa yang telah menyelesaikan seluruh kewajiban akademik wajib mengikuti ujian tesis yang dilaksanakan secara terbuka di hadapan Tim Penguji.",
+    "question_type": "prosedural",
+    "source_document": "contoh_peraturan_akademik.pdf",
+    "source_page": 1,
+    "validated_by": null,
+    "_catatan": "CONTOH FORMAT SAJA."
+  },
+  {
+    "id": "prosedural_002",
+    "question": "Apa yang harus dilakukan mahasiswa jika masa studi 4 semester belum cukup?",
+    "ground_truth": "Masa studi dapat diperpanjang paling lama 2 semester berikutnya dengan persetujuan Koordinator Program Studi.",
+    "question_type": "prosedural",
+    "source_document": "contoh_peraturan_akademik.pdf",
+    "source_page": 1,
+    "validated_by": null,
+    "_catatan": "CONTOH FORMAT SAJA."
+  },
+  {
+    "id": "inferensial_001",
+    "question": "Kalau mahasiswa baru mulai semester 5 dan minta perpanjangan maksimal, sampai semester berapa dia boleh studi?",
+    "ground_truth": "Masa studi normal 4 semester + perpanjangan maksimal 2 semester = mahasiswa boleh studi sampai semester ke-6.",
+    "question_type": "inferensial",
+    "source_document": "contoh_peraturan_akademik.pdf",
+    "source_page": 1,
+    "validated_by": null,
+    "_catatan": "CONTOH FORMAT SAJA -- soal inferensial butuh sintesis >1 bagian dokumen, sesuai Bab III.C.5."
+  },
+  {
+    "id": "inferensial_002",
+    "question": "Apakah mahasiswa yang SKS-nya baru 30 tapi sudah semester 4 sudah memenuhi syarat sidang tesis?",
+    "ground_truth": "Belum, karena syarat minimal 36 SKS (Pasal 10) belum terpenuhi, terlepas dari sudah menempuh 4 semester.",
+    "question_type": "inferensial",
+    "source_document": "contoh_peraturan_akademik.pdf",
+    "source_page": 1,
+    "validated_by": null,
+    "_catatan": "CONTOH FORMAT SAJA."
+  }
+]

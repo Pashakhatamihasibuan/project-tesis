@@ -1,0 +1,35 @@
+fastapi==0.139.0
+uvicorn[standard]
+python-multipart
+pydantic==2.13.4
+pydantic-settings==2.6.1        # config berbasis .env, gaya idiomatic modern FastAPI
+sqlalchemy==2.0.51
+passlib[bcrypt]==1.7.4
+python-jose[cryptography]==3.5.0
+pymupdf==1.28.0
+pdfplumber==0.11.9
+rank_bm25==0.2.2
+numpy==2.4.4
+turbovec==0.8.0
+sentence-transformers==5.6.0     # perlu akses internet ke huggingface.co saat pertama load
+pytesseract==0.3.13              # perlu binary tesseract-ocr terinstall di OS + tesseract-ocr-ind
+Pillow
+httpx==0.28.1                    # panggil Ollama API
+Sastrawi==1.0.1                  # stemming Bahasa Indonesia untuk BM25
+slowapi==0.1.10                  # rate limiting endpoint /chat, /auth/login, /auth/register
+
+# --- Evaluasi (RAGAS) ---
+# DIPIN KE VERSI SPESIFIK: ragas>=0.2 punya bug import (mencoba load
+# integrasi VertexAI yang butuh dependency google-cloud tambahan meski
+# tidak dipakai). ragas 0.1.21 + langchain-core<0.3 adalah kombinasi
+# yang tervalidasi bersih tanpa konflik saat pembuatan proyek ini.
+ragas==0.1.21
+langchain-core>=0.2.43,<0.3
+langchain-community==0.2.19
+scipy==1.16.3                    # Shapiro-Wilk, Kruskal-Wallis
+statsmodels==0.14.6              # ANOVA, Tukey HSD
+scikit-posthocs==0.11.5          # uji post-hoc Dunn + koreksi Bonferroni
+
+# --- Testing ---
+pytest==9.1.1
+pytest-asyncio
